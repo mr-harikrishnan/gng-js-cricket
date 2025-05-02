@@ -358,7 +358,7 @@ var t2HitBox = document.getElementById("t2HitBox") //team2 hit box
 var t2ScoreTable = document.getElementById("t2ScoreTable")  //team2 score table
 
 
-var timerTotalCount = 30
+var timerTotalCount = 60
 var highScore=0
 var highScorePlayer
 
@@ -380,7 +380,7 @@ startBtn.addEventListener("click", function () {
     
                 t1HitBox.style.display = "none"
                 clearInterval(timerVariable)
-                timerTotalCount = 30
+                timerTotalCount = 60
             
 
 
