@@ -2,9 +2,7 @@
 
 const container = document.createElement("div")  // container
 container.style.width = "100%"
-container.style.height = "100vh"
-container.style.border = "1px solid black"
-container.style.background = "#aad1f7"
+
 document.body.appendChild(container)
 
 // ----------------------------------------------------------------------------
@@ -12,10 +10,9 @@ document.body.appendChild(container)
 //container.header
 
 const header = document.createElement("div")  //header
-header.style.background = "#baa1f9"
+
 header.style.width = "100%"
-header.style.height = "10vh"
-header.style.border = "1px solid black"
+
 header.innerText = "CRICKET 10"
 header.style.textAlign = "center"
 header.style.fontSize = "50px"
@@ -27,10 +24,9 @@ container.appendChild(header)
 //conatiner.controller
 
 const controller = document.createElement("div")  // controler
-controller.style.background = "#daa1f1"
+
 controller.style.width = "100%"
 controller.style.height = "25vh"
-controller.style.border = "1px solid black"
 controller.style.display = "flex"
 container.appendChild(controller)
 
@@ -39,7 +35,6 @@ container.appendChild(controller)
 const team1 = document.createElement("div")
 team1.style.width = "40%"
 team1.style.height = "100%"
-team1.style.border = "1px solid black"
 team1.style.display = "flex"
 team1.style.flexDirection = "column"
 
@@ -74,7 +69,6 @@ team1.appendChild(t1HitBox)
 const timer = document.createElement("div")
 timer.style.width = "20%"
 timer.style.height = "100%"
-timer.style.border = "1px solid black"
 timer.style.textAlign = "center"
 timer.setAttribute("id", "timer")
 controller.appendChild(timer)
@@ -94,7 +88,6 @@ timer.appendChild(timerCount)
 const team2 = document.createElement("div")
 team2.style.width = "40%"
 team2.style.height = "100%"
-team2.style.border = "1px solid black"
 team2.style.display = "flex"
 team2.style.flexDirection = "column"
 
@@ -131,8 +124,6 @@ team2.appendChild(t2HitBox)
 const resultGen = document.createElement("div")
 resultGen.style.width = "100%"
 resultGen.style.height = "7%"
-resultGen.style.background = "#ebe1f1"
-resultGen.style.border = "1px solid black"
 resultGen.style.display = "flex"
 resultGen.style.justifyContent = "center"
 resultGen.style.alignItems = "center"
@@ -157,8 +148,7 @@ resultGen.appendChild(resultGenBtn)
 const scoreBoard = document.createElement("div")
 scoreBoard.style.width = "100%"
 scoreBoard.style.height = "58vh"
-scoreBoard.style.background = "#abe1f1"
-scoreBoard.style.border = "1px solid black"
+
 scoreBoard.style.display = "flex"
 container.appendChild(scoreBoard)
 
@@ -166,7 +156,6 @@ container.appendChild(scoreBoard)
 const team1Scores = document.createElement("div")
 team1Scores.style.width = "40%"
 team1Scores.style.height = "100%"
-team1Scores.style.border = "1px solid black"
 team1Scores.style.display = "flex"
 team1Scores.style.justifyContent = "center"
 team1Scores.style.flexDirection = "column"
@@ -178,7 +167,6 @@ scoreBoard.appendChild(team1Scores)
 //table 1
 var table1 = document.createElement("table");
 table1.setAttribute("id", "t1ScoreTable")
-table1.style.border = "1px solid black";
 team1Scores.appendChild(table1);
 
 var bollNo = 1
@@ -244,7 +232,6 @@ for (var i = 0; i < 11; i++) {
 const teamResult = document.createElement("div")
 teamResult.style.width = "20%"
 teamResult.style.height = "100%"
-teamResult.style.border = "1px solid black"
 teamResult.style.textAlign = "center"
 scoreBoard.appendChild(teamResult)
 
@@ -278,7 +265,6 @@ team2Scores.style.display = "flex"
 team2Scores.style.justifyContent = "center"
 team2Scores.style.alignItems = "center"
 team2Scores.style.flexDirection = "column"
-team2Scores.style.border = "1px solid black"
 team2Scores.innerText = "TEAM 2 SCORE BOARD"
 scoreBoard.appendChild(team2Scores)
 
@@ -287,7 +273,6 @@ scoreBoard.appendChild(team2Scores)
 
 //table 2
 var table2 = document.createElement("table");
-table2.style.border = "1px solid black";
 table2.setAttribute("id", "t2ScoreTable")
 team2Scores.appendChild(table2);
 
